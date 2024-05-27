@@ -1,5 +1,7 @@
 package com.utp.edu.pe.melamiserviceBackend.dto;
 
+
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -7,13 +9,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class UserDto {
+public class UserRequest {
 
-    private Long id;
-
+    @NotNull
     private String username;
 
-    private String status;
-
+    @NotNull
     private String password;
+
 }
